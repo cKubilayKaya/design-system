@@ -1,0 +1,95 @@
+@import "../variables.scss";
+
+.base-badge {
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.base-badge.green {
+  background-color: $green-50;
+  color: $green-600;
+}
+
+.base-badge.green.outline {
+  background-color: $white;
+  border: 1px solid $green-600;
+  color: $green-600;
+}
+
+.base-badge.blue {
+  background-color: $blue-50;
+  color: $blue-600;
+}
+
+.base-badge.blue.outline {
+  background-color: $white;
+  border: 1px solid $blue-600;
+  color: $blue-600;
+}
+
+.base-badge.light {
+  background-color: $gray-100;
+  color: $gray-700;
+}
+
+.base-badge.light.outline {
+  background-color: $white;
+  border: 1px solid $gray-600;
+  color: $gray-600;
+}
+
+.base-badge.red {
+  background-color: $red-50;
+  color: $red-600;
+}
+
+.base-badge.red.outline {
+  background-color: $white;
+  border: 1px solid $red-600;
+  color: $red-600;
+}
+
+.base-badge.yellow {
+  background-color: $yellow-50;
+  color: $yellow-600;
+}
+
+.base-badge.yellow.outline {
+  background-color: $white;
+  border: 1px solid $yellow-600;
+  color: $yellow-600;
+}
+
+.base-badge.small {
+  height: 20px;
+  font-size: 12px;
+}
+
+.base-badge.medium {
+  height: 28px;
+  font-size: 14px;
+}
+
+.base-badge.circle {
+  border-radius: 100px;
+}
+
+.base-badge.filter {
+  background-color: $gray-20 !important;
+  border: none !important;
+  color: $gray-300 !important;
+  cursor: pointer;
+  svg {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-left: 4px;
+    path {
+      fill: $gray-300;
+    }
+  }
+}

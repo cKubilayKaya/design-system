@@ -1,0 +1,87 @@
+$white: #ffffff;
+$black: #000000;
+
+// gray
+$gray-10: #fafbfc;
+$gray-20: #f4f5f7;
+$gray-30: #ebecf0;
+$gray-40: #dfe1e6;
+$gray-50: #f9fafb;
+$gray-60: #b3bac5;
+$gray-70: #a5adba;
+$gray-80: #97a0af;
+$gray-90: #8993a4;
+$gray-100: #f3f4f6;
+$gray-200: #e5e7eb;
+$gray-300: #d1d5db;
+$gray-400: #9ca3af;
+$gray-500: #6b7280;
+$gray-600: #4b5563;
+$gray-700: #374151;
+$gray-800: #1f2937;
+$gray-900: #111827;
+
+// blue
+$blue-10: #f7faff;
+$blue-25: #deebff;
+$blue-50: #eff6ff;
+$blue-100: #dbeafe;
+$blue-200: #bfdbfe;
+$blue-300: #93c5fd;
+$blue-400: #60a5fa;
+$blue-500: #3b82f6;
+$blue-600: #2563eb;
+$blue-700: #1d4ed8;
+$blue-800: #1e40af;
+$blue-900: #1e3a8a;
+
+// green
+$green-25: #e3fcef;
+$green-50: #ecfdf5;
+$green-100: #d1fae5;
+$green-200: #a7f3d0;
+$green-300: #6ee7b7;
+$green-400: #34d399;
+$green-500: #10b981;
+$green-600: #059669;
+$green-700: #047857;
+$green-800: #065f46;
+$green-900: #064e3b;
+
+// red
+$red-10: #fff9f7;
+$red-25: #ffebe6;
+$red-50: #fef2f2;
+$red-100: #fee2e2;
+$red-200: #fecaca;
+$red-300: #fca5a5;
+$red-400: #f87171;
+$red-500: #ef4444;
+$red-600: #dc2626;
+$red-700: #b91c1c;
+$red-800: #991b1b;
+$red-900: #7f1d1d;
+
+// yellow
+$yellow-25: #fffae6;
+$yellow-50: #fffbeb;
+$yellow-100: #fef3c7;
+$yellow-200: #fde68a;
+$yellow-300: #fcd34d;
+$yellow-400: #fbbf24;
+$yellow-500: #f59e0b;
+$yellow-600: #d97706;
+$yellow-700: #b45309;
+$yellow-800: #92400e;
+$yellow-900: #78350f;
+
+// box-shadow
+$sm-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+$base-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+$md-box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+$lg-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+$xl-box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+$xxl-box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+//transition
+$base-transition: 300ms all;

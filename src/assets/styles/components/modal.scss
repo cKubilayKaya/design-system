@@ -1,0 +1,256 @@
+@import "../variables.scss";
+
+.InvestorApplicationModal {
+  .modal-content {
+    .modal-header {
+      border-bottom: 0px;
+      padding: 24px 24px 8px 24px;
+      .modal-title {
+        color: $gray-900;
+        font-size: 18px;
+      }
+    }
+    .modal-body {
+      padding: 0px 24px 24px 24px;
+      .modal-body-content {
+        color: $gray-600;
+        font-size: 14px;
+        width: 75%;
+      }
+      .search {
+        position: relative;
+        img {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 16px;
+        }
+        input {
+          height: 40px;
+          border-radius: 4px;
+          padding-left: 48px;
+          border: 1px solid #e5e7eb;
+          width: 100%;
+          font-size: 14px;
+        }
+      }
+      .modal-content-list {
+        margin-top: 24px;
+        height: 220px;
+        overflow-y: scroll;
+        padding-right: 24px;
+        .modal-content-item {
+          padding-bottom: 16px;
+          margin-bottom: 16px;
+          border-bottom: 1px solid #e5e7eb;
+          .copy-icon {
+            cursor: pointer;
+          }
+          &:last-child {
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            border-bottom: 0px;
+          }
+          .modal-content-name {
+            img {
+              margin-right: 8px;
+            }
+            .modal-content-desc {
+              p {
+                margin-bottom: 0px;
+                font-size: 14px;
+                color: $gray-800;
+                font-weight: 600;
+              }
+              span {
+                font-size: 13px;
+                color: $gray-600;
+              }
+            }
+          }
+        }
+      }
+      .modal-content-list::-webkit-scrollbar {
+        width: 8px;
+        background-color: #f9fafb;
+        border-radius: 100px;
+      }
+      .modal-content-list::-webkit-scrollbar-thumb {
+        background-color: #fff0b3;
+        border-radius: 100px;
+      }
+      .InvestorApplicationModal-button {
+        margin-top: 16px;
+        background-color: #fff0b3;
+        height: 38px;
+        text-align: center;
+        color: $gray-800;
+        border-radius: 6px;
+        width: 100%;
+        border: none;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+    .modal-footer {
+      border-top: 0px;
+    }
+  }
+}
+
+.successModal {
+  .modal-content {
+    .modal-header {
+      border-bottom: 0px;
+      padding: 24px 24px 8px 24px;
+      .modal-title {
+        color: $gray-900;
+        font-size: 18px;
+      }
+    }
+    .modal-body {
+      padding: 0px 24px 24px 24px;
+      .modal-body-content {
+        color: $gray-600;
+        font-size: 14px;
+        width: 75%;
+      }
+      .search {
+        position: relative;
+        img {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 16px;
+        }
+        input {
+          height: 40px;
+          border-radius: 4px;
+          padding-left: 48px;
+          border: 1px solid #e5e7eb;
+          width: 100%;
+          font-size: 14px;
+        }
+      }
+      .modal-content-list {
+        margin-top: 24px;
+        height: 220px;
+        overflow-y: scroll;
+        padding-right: 24px;
+        .modal-content-item {
+          padding-bottom: 16px;
+          margin-bottom: 16px;
+          border-bottom: 1px solid #e5e7eb;
+          .copy-icon {
+            cursor: pointer;
+          }
+          &:last-child {
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            border-bottom: 0px;
+          }
+          .modal-content-name {
+            img {
+              margin-right: 8px;
+            }
+            .modal-content-desc {
+              p {
+                margin-bottom: 0px;
+                font-size: 14px;
+                color: $gray-800;
+                font-weight: 600;
+              }
+              span {
+                font-size: 13px;
+                color: $gray-600;
+              }
+            }
+          }
+        }
+      }
+      .modal-content-list::-webkit-scrollbar {
+        width: 8px;
+        background-color: #f9fafb;
+        border-radius: 100px;
+      }
+      .modal-content-list::-webkit-scrollbar-thumb {
+        background-color: #fff0b3;
+        border-radius: 100px;
+      }
+      .InvestorApplicationModal-button {
+        margin-top: 16px;
+        background-color: $blue-500;
+        height: 38px;
+        text-align: center;
+        color: $white;
+        border-radius: 6px;
+        width: 100%;
+        border: none;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+    .modal-footer {
+      border-top: 0px;
+    }
+    .modal-body {
+      padding-top: 24px !important;
+      h3 {
+        font-size: 18px;
+        color: $gray-900;
+        margin-bottom: 8px;
+        text-align: center;
+        margin-top: 24px;
+      }
+      p {
+        color: $gray-600;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.successModalTwoButtons {
+  .buttons {
+    button:first-child {
+      margin-right: 12px;
+      color: $gray-500 !important;
+      background-color: $white !important;
+      border: 1px solid $gray-60 !important;
+    }
+    @media only screen and (max-width: 576px) {
+      flex-direction: column;
+      button:first-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+.dangerModalTwoButtons {
+  .modal-wrapper-desc {
+    margin: 0px 16px;
+    h3,
+    p {
+      text-align: left !important;
+    }
+    h3 {
+      margin-top: 0px !important;
+    }
+    .buttons {
+      .InvestorApplicationModal-button:last-child {
+        background-color: $red-400;
+      }
+    }
+  }
+  .close-icon {
+    svg {
+      width: 20px;
+      cursor: pointer;
+      path {
+        fill: $gray-400;
+      }
+    }
+  }
+}

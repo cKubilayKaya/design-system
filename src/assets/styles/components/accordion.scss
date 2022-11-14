@@ -1,0 +1,22 @@
+@import "../variables.scss";
+
+.accordion-item {
+  border: 0px;
+  .accordion-button {
+    border-top: 1px solid $gray-200;
+    color: $gray-900 !important;
+    padding: 16px !important;
+    &:focus {
+      border-color: none !important;
+    }
+  }
+  .accordion-body {
+    color: $gray-500;
+    padding: 0px 16px 16px 16px !important;
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}

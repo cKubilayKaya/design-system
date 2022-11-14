@@ -1,0 +1,10 @@
+@import "../variables.scss";
+
+.tooltip-text {
+  color: $white;
+  border: none;
+  cursor: pointer;
+  background-color: $gray-700;
+  padding: 8px 16px;
+  border-radius: 4px;
+}

@@ -1,0 +1,76 @@
+@import "../variables.scss";
+
+input[type="checkbox"] {
+  margin-right: 12px;
+  min-width: 18px;
+  min-height: 18px;
+  border-radius: 8px;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border: 1px solid $gray-400;
+  border-radius: 5px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  transition: $base-transition;
+  cursor: pointer;
+}
+
+input[type="checkbox"] ~ label {
+  cursor: pointer;
+  color: $gray-800;
+  transition: $base-transition;
+}
+
+input[type="checkbox"]:hover {
+  border: 1px solid $blue-600;
+}
+
+input[type="checkbox"]:hover ~ label {
+  color: $blue-600;
+}
+
+input[type="checkbox"]:checked {
+  background-color: $blue-600;
+  border: none !important;
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+
+input[type="checkbox"]:after {
+  font-weight: 900;
+  content: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 4.5C11.72 4.5 11.47 4.61 11.29 4.79L7 9.09L4.71 6.79C4.53 6.61 4.28 6.5 4 6.5C3.45 6.5 3 6.95 3 7.5C3 7.78 3.11 8.03 3.29 8.21L6.29 11.21C6.47 11.39 6.72 11.5 7 11.5C7.28 11.5 7.53 11.39 7.71 11.21L12.71 6.21C12.89 6.03 13 5.78 13 5.5C13 4.95 12.55 4.5 12 4.5Z' fill='white'/%3E%3C/svg%3E%0A");
+  font-size: 24px;
+}
+
+input[type="checkbox"].disabled {
+  background-color: $gray-30;
+  border: 1px solid $gray-100;
+  cursor: no-drop;
+  &:hover {
+    border: 1px solid $gray-50;
+  }
+}
+
+input[type="checkbox"].disabled:after {
+  content: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 4.5C11.72 4.5 11.47 4.61 11.29 4.79L7 9.09L4.71 6.79C4.53 6.61 4.28 6.5 4 6.5C3.45 6.5 3 6.95 3 7.5C3 7.78 3.11 8.03 3.29 8.21L6.29 11.21C6.47 11.39 6.72 11.5 7 11.5C7.28 11.5 7.53 11.39 7.71 11.21L12.71 6.21C12.89 6.03 13 5.78 13 5.5C13 4.95 12.55 4.5 12 4.5Z' fill='%23adb5bd'/%3E%3C/svg%3E%0A");
+}
+
+input[type="checkbox"].disabled ~ label {
+  color: $gray-900;
+  cursor: no-drop;
+}

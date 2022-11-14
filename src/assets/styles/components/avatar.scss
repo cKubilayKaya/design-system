@@ -1,0 +1,49 @@
+@import "../variables.scss";
+
+.avatar-wrapper {
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $yellow-100;
+  padding: 4px;
+}
+
+.avatar-wrapper.xsm {
+  width: 16px;
+  height: 16px;
+  svg {
+    width: 8px;
+  }
+}
+.avatar-wrapper.sm {
+  width: 32px;
+  height: 32px;
+  svg {
+    width: 12px;
+  }
+}
+
+.avatar-wrapper.md {
+  width: 40px;
+  height: 40px;
+  svg {
+    width: 16px;
+  }
+}
+
+.avatar-wrapper.lg {
+  width: 96px;
+  height: 96px;
+  svg {
+    width: 32px;
+  }
+}
+
+.avatar-wrapper.xl {
+  width: 128px;
+  height: 128px;
+  svg {
+    width: 48px;
+  }
+}

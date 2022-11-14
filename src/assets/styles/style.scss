@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "variables.scss";
+@import "./components/buttons.scss";
+@import "./components/checkbox.scss";
+@import "./components/radio.scss";
+@import "./components/badge.scss";
+@import "./components/toggle.scss";
+@import "./components/avatar.scss";
+@import "./components/input.scss";
+@import "./components/tooltip.scss";
+@import "./components/flag.scss";
+@import "./components/modal.scss";
+@import "./components/accordion.scss";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  outline: none !important;
+  font-family: "Inter";
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Archivo";
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: $blue-50;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $blue-300;
+}
+.hidden {
+  display: none !important;
+}
+
+.components {
+  margin-top: 72px;
+  margin-bottom: 72px;
+  h3 {
+    margin-bottom: 48px;
+  }
+  .components-section {
+    border-bottom: 1px solid $gray-30;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    h4 {
+      margin-bottom: 16px;
+      font-size: 20px;
+      color: $gray-600;
+    }
+    .components-section-container {
+      margin-bottom: 16px;
+      border-bottom: 1px solid $gray-30;
+      padding-bottom: 16px;
+      &:last-child {
+        border-bottom: 0px;
+      }
+      .components-section-container-items {
+        button {
+          margin-right: 12px;
+        }
+        .flag {
+          margin-bottom: 60px;
+        }
+        .components-section-container-item {
+          margin-bottom: 16px;
+          .base-badge,
+          .avatar-wrapper {
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.accordion-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.components-section-container-items {
+  .reference-code-text {
+    background-color: #eee;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+.error-flag-button-title {
+  background-color: #eee;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.Toastify__toast-body {
+  div {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+}
+
+.Toastify__toast-icon {
+  margin-bottom: 0px !important;
+}

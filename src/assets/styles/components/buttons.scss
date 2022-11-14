@@ -1,0 +1,164 @@
+@import "../variables.scss";
+
+.base-button {
+  border-radius: 3px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: $base-transition;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.base-button.xs {
+  height: 30px;
+  padding: 6px 12px;
+}
+
+.base-button.sm {
+  height: 34px;
+  padding: 6px 12px;
+}
+
+.base-button.md {
+  height: 38px;
+  padding: 8px 16px;
+}
+
+.base-button.lg {
+  height: 42px;
+  padding: 10px 24px;
+}
+
+.base-button.xl {
+  height: 50px;
+  padding: 10px 24px;
+}
+
+.base-button.icon-direction-left {
+  svg {
+    margin-right: 4px;
+  }
+}
+
+.base-button.icon-direction-right {
+  svg {
+    margin-left: 4px;
+  }
+}
+
+.base-button.primary {
+  background-color: $blue-500;
+  color: $white;
+  &:hover {
+    background-color: $blue-600;
+  }
+  svg {
+    path {
+      fill: $white;
+    }
+  }
+}
+
+.base-button.disabled {
+  svg {
+    path {
+      fill: $gray-500;
+    }
+  }
+}
+
+.base-button.primary.disabled {
+  cursor: no-drop;
+  background-color: $gray-30;
+  color: $gray-400;
+  border: none;
+  pointer-events: none;
+  &:hover {
+    background-color: $gray-50;
+    color: $gray-400;
+  }
+}
+
+.base-button.secondary {
+  background-color: $white;
+  border: 1px solid $gray-60;
+  &:hover {
+    background-color: $gray-20;
+  }
+}
+
+.base-button.secondary.disabled {
+  cursor: no-drop;
+  background-color: $gray-30;
+  color: $gray-400;
+  border: none;
+  pointer-events: none;
+  &:hover {
+    background-color: $gray-50;
+    color: $gray-400;
+  }
+}
+
+.base-button.link {
+  background-color: $white;
+  color: $blue-500;
+  &:hover {
+    background-color: $blue-50;
+    color: $blue-500;
+  }
+  svg {
+    path {
+      fill: $blue-600;
+    }
+  }
+}
+
+.base-button.link.disabled {
+  cursor: no-drop;
+  background-color: transparent;
+  color: $gray-400;
+  &:hover {
+    background-color: transparent;
+    border: none;
+    color: $gray-400;
+  }
+  svg {
+    path {
+      fill: $gray-400;
+    }
+  }
+}
+
+.base-button.text-size-sm {
+  font-size: 14px;
+}
+
+.base-button.text-size-md {
+  font-size: 16px;
+}
+
+.base-button.empty {
+  svg {
+    margin-left: 0px !important;
+  }
+}
+
+.base-button {
+  user-select: none;
+  span {
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        margin-left: 16px;
+      }
+    }
+  }
+}
